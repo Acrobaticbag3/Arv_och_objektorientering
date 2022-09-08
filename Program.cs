@@ -4,8 +4,11 @@ using System;
 namespace Arv_och_objektorientering {
     internal class Program {
         static void Main(string[] args) {
-            Shape shape = new Shape(10, 7);
+            Triangle triangle = new Triangle(15, 14);
+            Rectangle rectangle = new Rectangle(10, 9);
 
+            triangle.CircumferanceAndArea();
+            rectangle.CircumferanceAndArea();
         }
     }
 }
