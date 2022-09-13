@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\Uniti-intro-main\\Arv_och_objektorientering\\Arv_och_objektorientering.csproj": {}
+    "C:\\Users\\Admin\\Documents\\GitHub\\Arv_och_objektorientering\\Arv_och_objektorientering.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\Uniti-intro-main\\Arv_och_objektorientering\\Arv_och_objektorientering.csproj": {
+    "C:\\Users\\Admin\\Documents\\GitHub\\Arv_och_objektorientering\\Arv_och_objektorientering.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Uniti-intro-main\\Arv_och_objektorientering\\Arv_och_objektorientering.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Arv_och_objektorientering\\Arv_och_objektorientering.csproj",
         "projectName": "Arv_och_objektorientering",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\Uniti-intro-main\\Arv_och_objektorientering\\Arv_och_objektorientering.csproj",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Arv_och_objektorientering\\Arv_och_objektorientering.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\Uniti-intro-main\\Arv_och_objektorientering\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Arv_och_objektorientering\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

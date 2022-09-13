@@ -5,6 +5,9 @@ namespace Arv_och_objektorientering {
     internal class Program {
         static void Main(string[] args) {
             string line = "====================";
+            string inputNow = "Input width and height, in that order";
+            string notFound = "No such calculation exists, input again \n==================";
+            string whatToDo = "What do you wish to calculate? \nArea, Circumferance or Both?";
 
             int loop = 0;
             int width;
@@ -17,11 +20,11 @@ namespace Arv_och_objektorientering {
                 if(answer == "triangle"){
                     int i = 0;
                     while (i < 1){
-                        Console.WriteLine("What do you wish to calculate? \nArea or Circumferance");
+                        Console.WriteLine(whatToDo);
                         string answerTwo = Console.ReadLine();
 
-                        if(answerTwo == "area") {
-                            Console.WriteLine("Input width and height, in that order");
+                        if(answerTwo == "Area") {
+                            Console.WriteLine(inputNow);
                             width = int.Parse(Console.ReadLine());
                             height = int.Parse(Console.ReadLine());
                             Triangle triangle = new Triangle(width, height);
@@ -30,8 +33,8 @@ namespace Arv_och_objektorientering {
                             triangle.Area();
                             Console.WriteLine(line);
 
-                        } else if(answerTwo == "circumferance") {
-                            Console.WriteLine("Input width and height, in that order");
+                        } else if(answerTwo == "Circumferance") {
+                            Console.WriteLine(inputNow);
                             width = int.Parse(Console.ReadLine());
                             height = int.Parse(Console.ReadLine());
                             Triangle triangle = new Triangle(width, height);
@@ -39,20 +42,33 @@ namespace Arv_och_objektorientering {
                             Console.WriteLine(line);
                             triangle.Circumferance();
                             Console.WriteLine(line);
+
+                        } else if(answerTwo == "Both") {
+                            Console.WriteLine(inputNow);
+                            width = int.Parse(Console.ReadLine());
+                            height = int.Parse(Console.ReadLine());
+                            Triangle triangle = new Triangle(width, height);
+
+                            Console.WriteLine(line);
+                            triangle.Area();
+                            triangle.Circumferance();
+                            Console.WriteLine(line);
+
                         } else {
-                            Console.WriteLine("No such calculation exists, input again.");
+                            Console.WriteLine(notFound);
                         }
+                        i++;
                     }
                     loop++;
 
                 } else if(answer == "rectangle") {
                     int i = 0;
                     while (i < 1){
-                        Console.WriteLine("What do you wish to calculate? \nArea or Circumferance");
+                        Console.WriteLine(whatToDo);
                         string answerTwo = Console.ReadLine();
 
                         if(answerTwo == "area") {
-                            Console.WriteLine("Input width and height, in that order");
+                            Console.WriteLine(inputNow);
                             width = int.Parse(Console.ReadLine());
                             height = int.Parse(Console.ReadLine());
                             Rectangle Rectangle = new Rectangle(width, height);
@@ -62,7 +78,7 @@ namespace Arv_och_objektorientering {
                             Console.WriteLine(line);
 
                         } else if(answerTwo == "circumferance") {
-                            Console.WriteLine("Input width and height, in that order");
+                            Console.WriteLine(inputNow);
                             width = int.Parse(Console.ReadLine());
                             height = int.Parse(Console.ReadLine());
                             Rectangle Rectangle = new Rectangle(width, height);
@@ -70,9 +86,22 @@ namespace Arv_och_objektorientering {
                             Console.WriteLine(line);
                             Rectangle.Circumferance();
                             Console.WriteLine(line);
-                        } else {
-                            Console.WriteLine("No such calculation exists, input again.");
+
+                        } else if(answerTwo == "Both") {
+                            Console.WriteLine(inputNow);
+                            width = int.Parse(Console.ReadLine());
+                            height = int.Parse(Console.ReadLine());
+                            Rectangle Rectangle = new Rectangle(width, height);
+
+                            Console.WriteLine(line);
+                            Rectangle.Area();
+                            Rectangle.Circumferance();
+                            Console.WriteLine(line);
+
+                        }else {
+                            Console.WriteLine(notFound);
                         }
+                        i++;
                     }
                     loop++;
 

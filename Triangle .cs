@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
          public void Circumferance() {
             int circumferance = width * 2 + height * 2;
-            Console.WriteLine("the circumferance of this rectangle is: " + circumferance);
+            Console.WriteLine("the circumferance of this triangle is: " + circumferance);
         }
 
         public void Area() {
             int area = width * height / 2;
-            Console.WriteLine("The area of this rectangle is: " + area);
+            Console.WriteLine("The area of this triangle is: " + area);
         }
     }
