@@ -8,10 +8,13 @@ using System.Threading.Tasks;
             
         }
 
-        public void CircumferanceAndArea() {
-            int circumferance = width + height * 2;
-            int area = width * height * 2 % 2;
+         public void Circumferance() {
+            int circumferance = width * 2 + height * 2;
+            Console.WriteLine("the circumferance of this rectangle is: " + circumferance);
+        }
 
-            Console.WriteLine("The area of this triangle is: " + area + "\nThe circumferance of the triangle is: " + circumferance);
+        public void Area() {
+            int area = width * height / 2;
+            Console.WriteLine("The area of this rectangle is: " + area);
         }
     }
