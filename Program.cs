@@ -12,6 +12,8 @@ namespace Arv_och_objektorientering {
             int loop = 0;
             int width;
             int height;
+
+            List<Shape> shapes = new List<Shape>();
         
             while (loop < 1){
                 Console.Write("Input which shape you'd like to edit: ");
